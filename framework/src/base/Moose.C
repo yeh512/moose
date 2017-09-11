@@ -126,6 +126,7 @@
 #include "ElementLpNormAux.h"
 #include "ElementL2ErrorFunctionAux.h"
 #include "ElementH1ErrorFunctionAux.h"
+#include "FluxAux.h"
 
 // dirac kernels
 #include "ConstantPointSource.h"
@@ -586,6 +587,7 @@ registerObjects(Factory & factory)
   registerAux(ElementLpNormAux);
   registerAux(ElementL2ErrorFunctionAux);
   registerAux(ElementH1ErrorFunctionAux);
+  registerAux(FluxAux);
 
   // Initial Conditions
   registerInitialCondition(ConstantIC);
